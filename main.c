@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     int i;
     for (i = 10; i >= 0; i--)
     {
-        printf("%i ", i)
+        printf("%i ", i);
         evenodd(i);
     }
     printf("%i ", i);
