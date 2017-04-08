@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     FILE *fp;
 
-    fp = fopen("test.csv", "r");
+    fp = fopen("test.csv", "w");
     if (fp == NULL)
     {
         fprintf(stderr, "Datei nicht geöffnet.\n");
