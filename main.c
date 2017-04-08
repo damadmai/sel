@@ -12,9 +12,12 @@ int main(int argc, char *argv[])
         fprintf(stderr, "Datei nicht geöffnet.\n");
         exit(EXIT_FAILURE);
     }
-    for (int i = 10; i >= 0; i--)
+    for (int i = 10; i > 0; i--)
     {
-        fprintf(fp, "%i ", i);
+        for (int j = 1; j <= 10; j++)
+        {
+            fprintf(fp, "%i; ", i * j);
+        }
     }
     fclose(fp);
 
